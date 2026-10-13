@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Varela Barbearia | Fraiburgo, SC</title>
+  <meta name="description" content="Cortes modernos e clássicos, barba, luzes e química em Fraiburgo, SC. Agende pelo WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/poste.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <a class="marca" href="#inicio">Varela Barbearia</a>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#trabalhos">Trabalhos</a>
+      <a href="#agendar">Agendar</a>
+      <a href="#local">Onde estamos</a>
+    </nav>
+    <a class="botao botao-pequeno wa" href="https://wa.me/554999528631">WhatsApp</a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="moldura">
+        <div class="texto">
+        <p class="local">Fraiburgo, SC</p>
+        <h1>Corte e barba feitos com calma e capricho.</h1>
+        <p class="sub">Cortes modernos e clássicos, luzes e química. Escolha o horário e confirme direto pelo WhatsApp.</p>
+        <div class="acoes">
+          <a class="botao wa" href="https://wa.me/554999528631">Agendar pelo WhatsApp</a>
+          <a class="link" href="#servicos">Ver serviços</a>
+        </div>
+        </div>
+        <img class="poste" src="images/poste.svg" alt="Poste de barbearia" width="120" height="240">
+      </div>
+    </section>
+
+    <section class="secao" id="servicos">
+      <h2>Serviços</h2>
+      <!-- TODO: os preços são fictícios. Troque pelos valores reais do dono. -->
+      <ul class="lista">
+        <li><div><h3>Corte normal</h3><p>Tesoura e máquina, com acabamento na navalha.</p></div><span class="preco">R$ 50</span></li>
+        <li><div><h3>Degradê</h3><p>Degradê e cortes modernos, do baixo ao alto.</p></div><span class="preco">R$ 50</span></li>
+        <li><div><h3>Barba</h3><p>Modelagem com toalha quente.</p></div><span class="preco">R$ 15</span></li>
+        <li><div><h3>Sobrancelha</h3><p>Design na navalha.</p></div><span class="preco">R$ 15</span></li>
+        <li><div><h3>Luzes</h3><p>Descoloração e luzes com cuidado para o fio.</p></div><span class="preco consulta">Consulte</span></li>
+        <li><div><h3>Química</h3><p>Alisamento e tratamentos químicos para o cabelo masculino.</p></div><span class="preco consulta">Consulte</span></li>
+      </ul>
+    </section>
+
+    <section class="secao" id="trabalhos">
+      <h2>Trabalhos</h2>
+      <!-- TODO: troque as ilustrações por fotos reais (ex.: images/corte-1.jpg) e ajuste o src e o alt. -->
+      <div class="galeria">
+        <img src="images/tesoura.svg" alt="Tesoura" loading="lazy">
+        <img src="images/maquina.svg" alt="Máquina de corte" loading="lazy">
+        <img src="images/navalha.svg" alt="Navalha" loading="lazy">
+        <img src="images/pente.svg" alt="Pente" loading="lazy">
+        <img src="images/pincel.svg" alt="Pincel de barba" loading="lazy">
+        <img src="images/espelho.svg" alt="Espelho" loading="lazy">
+      </div>
+      <p class="intro">Mais trabalhos no <a href="https://www.instagram.com/wellington.varela_barber/" target="_blank" rel="noopener">Instagram</a>.</p>
+    </section>
+
+    <section class="secao" id="agendar">
+      <h2>Peça seu horário</h2>
+      <p class="intro">Preencha os campos e o WhatsApp abre com a mensagem pronta. O barbeiro confirma o horário com você.</p>
+      <form id="form-agenda" class="form" novalidate>
+        <label>Seu nome
+          <input type="text" id="nome" autocomplete="name" required>
+        </label>
+        <label>Serviço
+          <select id="servico" required>
+            <option value="">Escolha um serviço</option>
+            <option>Corte normal</option>
+            <option>Degradê</option>
+            <option>Barba</option>
+            <option>Sobrancelha</option>
+            <option>Corte e barba</option>
+            <option>Luzes</option>
+            <option>Química</option>
+          </select>
+        </label>
+        <div class="duas">
+          <label>Dia
+            <input type="date" id="data" required>
+          </label>
+          <label>Horário
+            <input type="time" id="hora" required>
+          </label>
+        </div>
+        <p class="erro" id="erro" role="alert" hidden></p>
+        <button class="botao" type="submit">Enviar pelo WhatsApp</button>
+      </form>
+    </section>
+
+    <section class="secao" id="local">
+      <h2>Onde estamos</h2>
+      <!-- TODO: trocar pelo endereço e horários reais -->
+      <dl class="info">
+        <div><dt>Endereço</dt><dd>Rua, número, bairro. Fraiburgo, SC</dd></div>
+        <div><dt>Horário</dt><dd>Terça a sábado, 9h às 19h</dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/wellington.varela_barber/" target="_blank" rel="noopener">@wellington.varela_barber</a></dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Varela Barbearia, Fraiburgo, SC. Site desenvolvido por Leonardo de Assis.</p>
+  </footer>
+
+  <a class="flutuante wa" href="https://wa.me/554999528631" aria-label="Chamar no WhatsApp">WhatsApp</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
